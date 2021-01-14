@@ -2,12 +2,66 @@
 <html>
 
 <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home page</title>
     <!-- TODO: Include Font Awesome file here -->
     <!-- TODO: Include Google Fonts file here -->
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles/index.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./styles/common.css" />
 </head>
 
 <body>
     <!-- TODO: Include all your code for the header and home page here -->
+    <header>
+    <div class = "header">
+        <div class="button-block">
+            <input type="button" id = "signUpBtn" onclick="showSignUpModal()" class = "header-button" value="Sign Up">   
+            <input type="button" id = "signInBtn" onclick="showSignInModal()" class = "header-button" value="Sign In">
+        </div>
+        <span class="title">ScriBBler</span>
+        <p class="sub-heading">Explore, Imagine, Create</p>
+         
+    </div>
+    </header>
+    <div id="signUpModal" class = "modal">
+        <div class="modal-content">
+            <span class="closeBtn" id = "closeSignUp" onclick="hideSignUpModal()">&times;</span>
+            <h2>Get Started</h2>
+            <hr>
+            <form class = "modalForm">
+                <label for="fullname" class="label-text">Full name</label>
+                    <input type="text" class ="input-text" id="fullname" placeholder="Enter Full Name" required>
+                    <label for="username" class="label-text">Username</label>
+                    <input type="text" class ="input-text" id="username" placeholder="Enter Username" required>
+                    <label for="password" class="label-text">Password</label>
+                    <input type="password" class ="input-text" id="password" placeholder="Enter Password" required>
+                    <label for="confirmpassword" class="label-text">Confirm Password</label>
+                    <input type="password" class ="input-text" id="confirm_password" placeholder="Confirm Password" required>
+                    <button class="modalButton">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    <div id="signInModal" class = "modal">
+        <div class="modal-content">
+            <span class="closeBtn" id = "closeSignIn" onclick="hideSignInModal()">&times;</span>
+            <h2>Welcome Back!</h2>
+            <hr>
+            <form class = "modalForm">
+                <label for="username" class="label-text">Username</label>
+                <input type="text" class ="input-text" id="username" placeholder="Enter Username" required>
+                <label for="password" class="label-text">Password</label>
+                <input type="password" class ="input-text" id="password" placeholder="Enter Password" required>
+                <button class="modalButton">Sign In</button>
+                <div class="signin-footer">Not a member?
+                <span onclick= "redirect()" class="signUpLink">Sign Up</span>
+                </div> 
+            </form>
+        </div>
+    </div>
+    <script src="./scripts/index.js"></script>
 </body>
 
 </html>

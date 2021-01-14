@@ -1,0 +1,21 @@
+
+.title {
+    color: blue;
+    font-family: 'Montez', cursive;
+    font-size: xx-large;
+    font-weight:150; 
+    margin-bottom: 0px;
+}
+.sub-heading {
+    margin-top:0px;
+    font-family: 'ubuntu-mono', monospace;
+}
+.button-block {
+    float: right;
+}
+.header-button {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+}
