@@ -1,27 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 
 <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PostsList</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/postslist.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../styles/common.css" />
     <!-- TODO: Include Font Awesome file here -->
+    <script src="https://kit.fontawesome.com/b04da0ad5e.js" crossorigin="anonymous"></script>
     <!-- TODO: Include Google Fonts file here -->
 </head>
 
 <body>
     <!-- TODO: Include code for header here -->
-
+    <header>
+        <div class = "header">
+            <div class="button-block">
+                <input type="button" id = "signUpBtn" onclick="showSignUpModal()" class = "header-button" value="Sign Up">   
+                <input type="button" id = "signInBtn" onclick="showSignInModal()" class = "header-button" value="Sign In">
+            </div>
+            <span class="title">ScriBBler</span>
+            <p class="sub-heading">Explore, Imagine, Create</p>
+             
+        </div>
+    </header>
+    <div id="signUpModal" class = "modal">
+        <div class="modal-content">
+            <span class="closeBtn" id = "closeSignUp" onclick="hideSignUpModal()"><i class="fas fa-times"></i></span>
+            <h2>Get Started</h2>
+            <hr>
+            <form class = "modalForm">
+                <label for="fullname" class="label-text">Full name</label>
+                <input type="text" class ="input-text" id="fullname" placeholder="Enter Full Name" required>
+                <label for="username" class="label-text">Username</label>
+                <input type="text" class ="input-text" id="username" placeholder="Enter Username" required>
+                <label for="password" class="label-text">Password</label>
+                <input type="password" class ="input-text" id="password" placeholder="Enter Password" required>
+                <label for="confirmpassword" class="label-text">Confirm Password</label>
+                <input type="password" class ="input-text" id="confirm_password" placeholder="Confirm Password" required>
+                <button class="modalButton">Sign Up</button>
+        </form>
+    </div>
+</div>
+<div id="signInModal" class = "modal">
+    <div class="modal-content">
+        <span class="closeBtn" id = "closeSignIn" onclick="hideSignInModal()"><i class="fas fa-times"></i></span>
+        <h2>Welcome Back!</h2>
+        <hr>
+        <form class = "modalForm">
+            <label for="username" class="label-text">Username</label>
+            <input type="text" class ="input-text" id="username" placeholder="Enter Username" required>
+            <label for="password" class="label-text">Password</label>
+            <input type="password" class ="input-text" id="password" placeholder="Enter Password" required>
+            <button class="modalButton">Sign In</button>
+            <div class="signin-footer">Not a member?
+            <span onclick= "redirect()" class="signUpLink">Sign Up</span>
+            </div> 
+        </form>
+    </div>
+</div>
     <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
 
     <!-- list of all posts starts here -->
-    <div>
+    <div class="allPostsContainer">
 
         <!-- post 1 starts here -->
-        <div>
-            <div>
-                <p>Srishti Gupta</p>
+        <div class="postContainer">
+            <div class="postLeft">
+                <p class="postAuthor">Srishti Gupta</p>
             </div>
 
-            <div>
-                <div>
+            <div class="postContent">
+                <div class="postTitle">
                     <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
                     <span>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
@@ -36,13 +87,13 @@
         <!-- post 1 ends here -->
 
         <!-- post 2 starts here -->
-        <div>
-            <div>
+        <div class="postContainer">
+            <div class = "postLeft">
                 <p>Colby Fayock</p>
             </div>
 
-            <div>
-                <div>
+            <div class="postContent">
+                <div class= "postTitle">
                     <p>What is linting and how can it save you time?</p>
                     <span>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
@@ -57,13 +108,13 @@
         <!-- post 2 ends here -->
 
         <!-- post 3 starts here -->
-        <div>
-            <div>
+        <div class="postContainer">
+            <div class = "postLeft">
                 <p>Yazeed Bzadough</p>
             </div>
 
-            <div>
-                <div>
+            <div class="postContent">
+                <div class= "postTitle">
                     <p>How to Get More Views on Your Tech Blog</p>
                     <span>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
@@ -78,13 +129,13 @@
         <!-- post 3 ends here -->
 
         <!-- post 4 starts here -->
-        <div>
-            <div>
+        <div class="postContainer">
+            <div class = "postLeft">
                 <p>Cedd Burge</p>
             </div>
 
-            <div>
-                <div>
+            <div class="postContent">
+                <div class= "postTitle">
                     <p>How to write easily describable code</p>
                     <span>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
@@ -100,13 +151,13 @@
         <!-- post 4 ends here -->
 
         <!-- post 5 starts here -->
-        <div>
-            <div>
+        <div class="postContainer">
+            <div class = "postLeft">
                 <p>Srishti Gupta</p>
             </div>
 
-            <div>
-                <div>
+            <div class="postContent">
+                <div class= "postTitle">
                     <p>Everything you should know about ‘module’ & ‘require’ in Node.js</p>
                     <span>
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
@@ -125,6 +176,7 @@
 
     </div>
     <!-- list of all posts ends here -->
+    <script src="../scripts/common.js"></script>
 </body>
 
 </html>

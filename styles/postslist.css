@@ -1,0 +1,41 @@
+body {
+    background-color: #ffeedd;
+}
+.allPostsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+.postContainer {
+    display: flex;
+    width:40vw;
+    margin: 20px;
+}
+.postLeft {
+    display: flex;
+    width: 20vw;
+    background-color: white;
+    border-style: hidden;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+.postAuthor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.postContent {
+    width: 80vw;
+    background-color: lightgray;
+    border-style: hidden;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 10px;
+}
