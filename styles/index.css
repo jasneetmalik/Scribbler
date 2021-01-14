@@ -59,3 +59,14 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
+.signin-footer {
+    font-weight: bold;
+    justify-self: center;
+}
+.signUpLink {
+    color: blue;
+    justify-self: center;
+}
+.signUpLink:hover {
+    cursor: pointer;
+}
