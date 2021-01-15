@@ -13,6 +13,9 @@ body {
     width:40vw;
     margin: 20px;
 }
+.postContainer:hover {
+    box-shadow: 5px 5px  #888888;
+}
 .postLeft {
     display: flex;
     width: 15vw;
@@ -34,6 +37,12 @@ body {
     color: gray;
     font-size: large;
 }
+.postDesc {
+    line-height:1.2em;
+    height:3.6em;
+    overflow:hidden;
+}
+
 .postContent {
     width: 85vw;
     background-color: lightgray;
@@ -49,4 +58,17 @@ body {
 }
 .postIcon:hover {
     cursor: pointer;
+}
+.redButton {
+    background-color:red;
+    color: white;
+    padding: 10px;
+    margin: 20px 0px;
+    border: 1px solid #888;
+    float: right;
+    
+}
+.buttonMedium {
+    height: 40px;
+    width: 80px;
 }
