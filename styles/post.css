@@ -9,7 +9,7 @@
     width: 100%;
     text-align: center;
 }
-.floatRight {
+.right {
     position: absolute;
     right: 60px;
     padding: 10px;
@@ -21,4 +21,6 @@
 .postDesc {
     margin-top: 0px;
     text-align: justify;
+    height: 15em;
+    overflow: auto;
 }
