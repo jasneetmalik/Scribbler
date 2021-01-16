@@ -11,4 +11,7 @@ function showDeleteModal(postid) {
 function hideDeleteModal() {
     document.getElementById('deleteModal').style.display = 'none';
 }
+function redirectToPost(postid) {
+    location.href= 'post.html'+ '#' + postid;
+}
 

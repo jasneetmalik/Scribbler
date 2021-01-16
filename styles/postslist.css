@@ -59,16 +59,9 @@ body {
 .postIcon:hover {
     cursor: pointer;
 }
-.redButton {
-    background-color:red;
-    color: white;
+.deleteButton {
     padding: 10px;
     margin: 20px 0px;
     border: 1px solid #888;
     float: right;
-    
-}
-.buttonMedium {
-    height: 40px;
-    width: 80px;
 }

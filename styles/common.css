@@ -85,3 +85,12 @@
 .signUpLink:hover {
     cursor: pointer;
 }
+.redButton {
+    background-color:red;
+    color: white;
+    
+}
+.buttonMedium {
+    height: 40px;
+    width: 80px;
+}
