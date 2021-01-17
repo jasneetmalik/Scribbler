@@ -62,6 +62,7 @@
             </form>
         </div>
     </div>
+<main class="mainBlock">
 <!-- post 1 starts here -->
     <div class="postContainer" id="post1">
         <div class="postTitle">
@@ -88,6 +89,7 @@
             </p>
         </div>
     </div>
+    
 <!-- post 1 ends here -->
 
 <!-- post 2 starts here -->
@@ -183,7 +185,20 @@
     </div>
 </div>
 <!-- post 5 ends here -->
+<div class="LikeBlock"></div>
+    <button id= "likeButton" class="redButton buttonMedium" onclick="showLikeCount()"><i class="fas fa-thumbs-up"></i> Like</button>
+    <p id=noOfLikes>  </p>
 </div>
+<div class="commentBlock">
+    <textarea id="comment" cols="110" rows="5" placeholder="Leave a comment ..."></textarea>
+    <br>
+    <button class="redButton buttonMedium" onclick="addComment()">Comment</button>
+    <h3>All Comments</h3>
+    <div id="allComments">
+
+    </div>    
+</div>
+</main>
     <script src="../scripts/common.js"></script>
     <script src="../scripts/post.js"></script>
-</body>
+</div>

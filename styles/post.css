@@ -1,13 +1,21 @@
+.mainBlock {
+    width: 95%;
+    margin: 0px 30px;
+}
 .postContainer {
     display: none;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 95%;
-    margin: 10px 30px;
+    
+}
+.commentBlock {
+    margin: 10px 0px;
 }
 .postTitle {
     width: 100%;
     text-align: center;
+    margin:0%;
+    line-height: 0vmin;
 }
 .right {
     position: absolute;
@@ -17,10 +25,16 @@
 .author {
     font-family: 'ubuntu-mono', monospace;
     font-size:large;
+    line-height: 0vmin;
 }
 .postDesc {
     margin-top: 0px;
     text-align: justify;
-    height: 15em;
+    height: 10em;
     overflow: auto;
+}
+.allComments {
+    border-style: solid;
+    border-color: lightgrey;
+    border-width: 10px 5px;
 }
