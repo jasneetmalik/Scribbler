@@ -22,7 +22,7 @@
                 <input type="button" id = "signUpBtn" onclick="showSignUpModal()" class = "header-button" value="Sign Up">   
                 <input type="button" id = "signInBtn" onclick="showSignInModal()" class = "header-button" value="Sign In">
             </div>
-            <span class="title">ScriBBler</span>
+            <a class="link" href="../index.html"><span class="title">ScriBBler</span></a>
             <p class="sub-heading">Explore, Imagine, Create</p>
              
         </div>
@@ -72,7 +72,7 @@
             <p>Srishti Gupta</p>
         </div>
         <div>
-            <button id="edit-save" class="right redButton buttonMedium" onclick="toggleEdit()">Edit <i class="fas fa-edit"></i></button>
+            <button id="editSave1" class="right redButton buttonMedium" onclick="toggleEdit('postDesc1','editSave1')">Edit <i class="fas fa-edit"></i></button>
         </div>
         
         <div class="postDesc" id="postDesc1">
@@ -94,100 +94,94 @@
 
 <!-- post 2 starts here -->
 <div id="post2" class="postContainer">
-    <div class = "postLeft">
+    <div  class= "postTitle">
+        <h2>What is linting and how can it save you time?</h2>
+    </div>
+    <div class = "author">
         <p>Colby Fayock</p>
     </div>
-
-    <div class="postContent">
-        <div>
-            <p class= "postTitle">What is linting and how can it save you time?</p>
-            <span class="postIcon" onclick="showDeleteModal('post2')">
-                <i class="fas fa-trash"></i>
-                <!-- TODO: Include Font Awesome icon for delete icon here -->
-            </span>
-        </div>
-        <p class = "postDesc" >One of the biggest challenges in software development is time. It’s something we can’t easily get more of, but linting can help us make the most out of the time we have.</p>
-        <span class="postIcon" onclick="window.location.href='../html/post.html'"> 
-            <i class="fas fa-ellipsis-h"></i>
-            <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-        </span>
+    <div>
+        <button id="editSave2" class="right redButton buttonMedium" onclick="toggleEdit('postDesc2','editSave2')">Edit <i class="fas fa-edit"></i></button>
+    </div>
+    <div class="postDesc" id="postDesc2">
+        <p>One of the biggest challenges in software development is time. It’s something we can’t easily get more of, 
+            but linting can help us make the most out of the time we have. One of the biggest challenges in software development is time. It’s something we can’t easily get more of, 
+            but linting can help us make the most out of the time we have.One of the biggest challenges in software development is time. It’s something we can’t easily get more of, 
+            but linting can help us make the most out of the time we have.One of the biggest challenges in software development is time. It’s something we can’t easily get more of, 
+            but linting can help us make the most out of the time we have.One of the biggest challenges in software development is time. It’s something we can’t easily get more of, 
+            but linting can help us make the most out of the time we have.One of the biggest challenges in software development is time. It’s something we can’t easily get more of, 
+            but linting can help us make the most out of the time we have.One of the biggest challenges in software development is time. It’s something we can’t easily get more of, 
+            but linting can help us make the most out of the time we have.</p>
     </div>
 </div>
 <!-- post 2 ends here -->
 
 <!-- post 3 starts here -->
 <div id="post3" class="postContainer">
-    <div class = "postLeft">
+    <div  class= "postTitle">
+        <h2>How to Get More Views on Your Tech Blog</h2>
+    </div>
+    <div class = "author">
         <p>Yazeed Bzadough</p>
     </div>
-
-    <div class="postContent">
-        <div>
-            <p class= "postTitle">How to Get More Views on Your Tech Blog</p>
-            <span class="postIcon" onclick="showDeleteModal('post3')">
-                <i class="fas fa-trash"></i>
-                <!-- TODO: Include Font Awesome icon for delete icon here -->
-            </span>
-        </div>
-        <p class = "postDesc">If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.</p>
-        <span class="postIcon" onclick="window.location.href='../html/post.html'"> 
-            <i class="fas fa-ellipsis-h"></i>
-            <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-        </span>
+    <div>
+        <button id="editSave3" class="right redButton buttonMedium" onclick="toggleEdit('postDesc3','editSave3')">Edit <i class="fas fa-edit"></i></button>
+    </div>
+    <div class="postDesc" id="postDesc3">
+        <p>If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.
+            If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.
+            If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.
+            If you're a developer with a Twitter account, you've already seen everyone and their cat start a blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable name in the industry.
+            </p>
     </div>
 </div>
 <!-- post 3 ends here -->
 
 <!-- post 4 starts here -->
 <div id="post4" class="postContainer">
-    <div class = "postLeft">
+    <div class= "postTitle">
+        <h2>How to write easily describable code</h2>
+    </div>
+    <div class = "author">
         <p>Cedd Burge</p>
     </div>
-
-    <div class="postContent">
-        <div>
-            <p class= "postTitle">How to write easily describable code</p>
-            <span class="postIcon" onclick="showDeleteModal('post4')">
-                <!-- TODO: Include Font Awesome icon for delete icon here -->
-                <i class="fas fa-trash"></i>
-            </span>
-        </div>
-        <p class = "postDesc">When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
+    <div>
+        <button id="editSave4" class="right redButton buttonMedium" onclick="toggleEdit('postDesc4','editSave4')">Edit <i class="fas fa-edit"></i></button>
+    </div>
+    <div class="postDesc" id="postDesc4">    
+        <p>When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
+            leads to confusion when discussing the code.When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
+            leads to confusion when discussing the code.When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
+            leads to confusion when discussing the code.When code is not describable using words, most people have to do some mental mapping to turn it in to words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different people will map to different words, which
             leads to confusion when discussing the code.</p>
-        <span class="postIcon" onclick="window.location.href='../html/post.html'">
-            <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-            <i class="fas fa-ellipsis-h"></i>
-        </span>
     </div>
 </div>
 <!-- post 4 ends here -->
 
 <!-- post 5 starts here -->
 <div id="post5" class="postContainer">
-    <div class = "postLeft">
+    <div  class= "postTitle">
+        <h2>Everything you should know about ‘module’ & ‘require’ in Node.js</h2>
+    </div>
+    <div class = "author">
         <p>Srishti Gupta</p>
     </div>
-
-    <div class="postContent">
-        <div>
-            <p class= "postTitle">Everything you should know about ‘module’ & ‘require’ in Node.js</p>
-            <span class="postIcon" onclick="showDeleteModal('post5')">
-                <i class="fas fa-trash"></i>
-                <!-- TODO: Include Font Awesome icon for delete icon here -->
-            </span>
-        </div>
-        <p class = "postDesc">Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
-            named xyz.</p>
-        <span class="postIcon" onclick="window.location.href='../html/post.html'">
-            <i class="fas fa-ellipsis-h"></i>
-            <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-        </span>
+    <div>
+        <button id="editSave5" class="right redButton buttonMedium" onclick="toggleEdit('post5Desc5','editSave5')">Edit <i class="fas fa-edit"></i></button>
+    </div>
+    <div class="postDesc" id="postDesc5">
+        <p>Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
+            named xyz.Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
+            named xyz.Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
+            named xyz.Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
+            named xyz.Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing some code and this file is named xyz.js, then this file is treated as a module in Node, and you can say that you’ve created a module
+            named xyz.Node.</p>
     </div>
 </div>
 <!-- post 5 ends here -->
-<div class="LikeBlock"></div>
+<div class="likeBlock"></div>
     <button id= "likeButton" class="redButton buttonMedium" onclick="showLikeCount()"><i class="fas fa-thumbs-up"></i> Like</button>
-    <p id=noOfLikes>  </p>
+    <p id=noOfLikes>Be the first one to like this!</p>
 </div>
 <div class="commentBlock">
     <textarea id="comment" cols="110" rows="5" placeholder="Leave a comment ..."></textarea>

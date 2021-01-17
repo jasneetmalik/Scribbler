@@ -28,7 +28,6 @@
     line-height: 0vmin;
 }
 .postDesc {
-    margin-top: 0px;
     text-align: justify;
     height: 10em;
     overflow: auto;
@@ -37,4 +36,7 @@
     border-style: solid;
     border-color: lightgrey;
     border-width: 10px 5px;
+}
+.likeBlock {
+    margin: 10px 0px;
 }
