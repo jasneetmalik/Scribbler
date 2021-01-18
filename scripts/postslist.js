@@ -1,4 +1,4 @@
-
+//Function to Delete a Post. It shows delete modal and hides the selected post when user clicks OK
 
 function showDeleteModal(postid) {
     document.getElementById('deleteModal').style.display = 'block';
@@ -14,7 +14,7 @@ function showDeleteModal(postid) {
         document.getElementById('ok').removeEventListener('click',addOK);
     }
 }
-
+//Function to redirect to the post selected by user
 function redirectToPost(postid) {
     location.href= 'post.html'+ '#' + postid;
 }
